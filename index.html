@@ -7,52 +7,71 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link rel="icon" href="vape-meets-hubbly-logo-blue.png" type="image/png">
-
 </head>
 <body>
-    
-<!-- The video -->
+
+<!-- Age verification popup -->
+<div id="agePopup" class="age-popup">
+    <div class="age-popup-content">
+        <h2>Are you 18 years or older?</h2>
+        <button id="yesBtn">Yes</button>
+        <button id="noBtn">No</button>
+    </div>
+</div>
+
+<!-- Video background -->
 <video autoplay muted loop playsinline id="myVideo">
     <source src="smoke-720p.mp4" type="video/mp4">
-  </video>
+</video>
 
-  <!-- Optional: some overlay text to describe the video -->
-  <div class="content">
-      <div class="header">
+<!-- Main content -->
+<div class="content">
+    <div class="header">
         <button class="logo-button">
-        <a><img class="logo" src="vape-meets-hubbly-logo-blue.png"></a>
+            <a><img class="logo" src="vape-meets-hubbly-logo-blue.png" alt="Logo"></a>
         </button>
-      </div>
+    </div>
     <h1>VAPE MEETS HUBBLY</h1>
     <h2>HUBBLY RENTAL SIT DOWN AVAILABLE</h2>
     <h3>Get all your favourite Vape & Hookah Products</h3>
-    <!-- Use a button to pause/play the video with JavaScript -->
-   <!--<button id="myBtn" onclick="myFunction()">Pause</button>-->
 
-      <div class="footer-content">
-          <div class="trading-hours">
-              <h3>TRADING HOURS</h3>
-              <p>MONDAY - THURSDAY: 09:00 - 18:00</p>
-              <p>FRIDAY - SATURDAY: 09:00 AM - 19:00</p>
-              <p>SUNDAY: 09:00 - 14:00</p>
-          </div>
-          <div class="socials">
-              <h3>FOLLOW US</h3>
-              <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
-              <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-              <p>Vape Meets Hubbly</p>
-          </div>
-          <div class="contacts">
-              <h3>CONTACT US</h3>
-              <p><a><i class="fa fa-phone" aria-hidden="true"></i></a> 079 876 1917/084 568 4558</p>
-              <p><a><i class="fa fa-home" aria-hidden="true"></i></a> 38 Mimosa Street, Wilropark, Country</p>
-          </div>
-      </div>
+    <!-- Rental Cards -->
+    <div class="cards">
+        <div class="card">
+            <h3>Hookah Rental</h3>
+            <p>Rent a hookah for your personal enjoyment.</p>
+            <button class="card-btn" onclick="alert('Hookah rental booked!')">Rent Now</button>
+        </div>
+        <div class="card">
+            <h3>Vape Rental</h3>
+            <p>Get our premium vape devices for your session.</p>
+            <button class="card-btn" onclick="alert('Vape rental booked!')">Rent Now</button>
+        </div>
+    </div>
 
-  </div>
+    <!-- Footer -->
+    <div class="footer-content">
+        <div class="trading-hours">
+            <h3>TRADING HOURS</h3>
+            <p>MONDAY - THURSDAY: 09:00 - 18:00</p>
+            <p>FRIDAY - SATURDAY: 09:00 AM - 19:00</p>
+            <p>SUNDAY: 09:00 - 14:00</p>
+        </div>
+        <div class="socials">
+            <h3>FOLLOW US</h3>
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.whatsapp.com" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <p>Vape Meets Hubbly</p>
+        </div>
+        <div class="contacts">
+            <h3>CONTACT US</h3>
+            <p><i class="fa fa-phone" aria-hidden="true"></i> 079 876 1917 / 084 568 4558</p>
+            <p><i class="fa fa-home" aria-hidden="true"></i> 38 Mimosa Street, Wilropark, Country</p>
+        </div>
+    </div>
+</div>
 
-<script src="script.js"></script>  
+<script src="script.js"></script>
 </body>
 </html>
-
